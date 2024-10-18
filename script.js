@@ -12,7 +12,7 @@ const colors = {
     yellow:"#FFDD00"
 }
 
-const maxDiff = 120;
+const maxDiff = 110;
 
 var pixels;
 
@@ -24,15 +24,8 @@ document.querySelectorAll(".colorButton").forEach(element => {
     });
 });
 
-window.addEventListener("load", () => {
-    canvas.width = innerWidth / 3;
-    canvas.height = innerWidth / 3;
-    
-    context.fillStyle = "#fff";
-    context.fillRect(0,0,canvas.width,canvas.height);
-    
-    context.drawImage(document.querySelector("#template"), 0, 0, canvas.width, canvas.height)
-});
+window.addEventListener("load", resetCanvas);
+window.addEventListener("resize", resetCanvas);
 
 document.querySelector("#download").addEventListener("click", () => {
     var image = canvas.toDataURL();
@@ -124,6 +117,16 @@ canvas.addEventListener("click", e => {
 
     context.putImageData(data, 0, 0);
 });
+
+function resetCanvas(){
+    canvas.width = innerWidth / 3;
+    canvas.height = innerWidth / 3;
+    
+    context.fillStyle = "#fff";
+    context.fillRect(0,0,canvas.width,canvas.height);
+    
+    context.drawImage(document.querySelector("#template"), 0, 0, canvas.width, canvas.height)
+}
 
 function matchesStartColor(pixelPos){
     var r = pixels[pixelPos];
