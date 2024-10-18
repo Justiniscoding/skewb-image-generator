@@ -12,7 +12,7 @@ const colors = {
     yellow:"#FFDD00"
 }
 
-const maxDiff = 70;
+const maxDiff = 120;
 
 var pixels;
 
