@@ -8,7 +8,8 @@
     </head>
     <body>
         <h1>Skewb Image Generator</h1>
-        <p>This is a simple tool that lets you create images for scrambles/states for the skewb Rubik's cube. Pick a color and then tap on any of the faces to change it to that color. Press the download button and the image will be downloaded!</p>
+        <p>This is a simple tool that lets you create images for scrambles/states for the skewb Rubik's cube. Pick a color and then tap on any of the faces to change it to that color. Press the download button and the image will be downloaded! </p>
+        <img src="skewb-template.png" id="template">
         <div class="buttonContainer">
             <div class="colorButton white"></div>
             <div class="colorButton blue"></div>
@@ -18,6 +19,8 @@
             <div class="colorButton yellow"></div>
         </div>
         <canvas id="canvas"></canvas>
+        <!-- <input type="checkbox" id="transparent"> -->
+        <button id="download">Download Image</button>
         <script src="script.js"></script>
     </body>
 </html>
