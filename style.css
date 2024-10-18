@@ -1,0 +1,58 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #0B192C;
+}
+
+h1, p{
+    color: #FF6500;
+    text-align: center;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+p{
+    max-width:50vw;
+    padding-left: 25vw;
+    font-size: 1vw;
+}
+
+.buttonContainer{
+    
+}
+
+.colorButton{
+    width: 4vw;
+    height: 4vw;
+
+    border-radius: 0.25vw;
+}
+
+.white{
+    background-color: white;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
